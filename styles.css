@@ -1,1 +1,44 @@
 /*  your css code here. If applicable */
+/*  your css code here. If applicable */
+.container{
+	display:flex;
+	flex-direction:column;
+	width:300px;
+	row-gap:15px
+}
+input{
+	width:200px;
+	margin:5px;
+	padding:5px
+}
+button{
+	width:200px;
+	margin:5px;
+	padding:5px
+}
+.board{
+	display:none;
+	flex-wrap:wrap;
+	width:350px;
+	height:200px;
+}
+.cell{
+	width:100px;
+	height:70px;
+	border:1px solid black;
+	cursor:pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: pink; */
+    box-sizing: border-box;
+    border: 1px solid #333;
+    /* //border-bottom: 2px solid #333; */
+}
+.cell:nth-child(3n){
+    border-right: none;
+}
+.cell:nth-child(n+7){
+    border-bottom: none;
+}
+
